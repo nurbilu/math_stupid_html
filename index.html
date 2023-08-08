@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Functions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js"></script>
+</head>
+
+<body>
+    <div id="output"></div>
+    <script>
+        const outputDiv = document.getElementById('output');
+
+        const randomNum = math.random();
+        const squared = math.square(5);
+        const sineValue = math.sin(math.unit(30, 'degree'));
+
+        outputDiv.innerHTML += `<p>Random Number: ${randomNum}</p>`;
+        outputDiv.innerHTML += `<p>Square of 5: ${squared}</p>`;
+        outputDiv.innerHTML += `<p>Sin of 30 degrees: ${sineValue}</p>`;
+    </script>
+</body>
+
+</html>
